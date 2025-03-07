@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Serviços - MetaSecurity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonte Moderna -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Bootstrap CSS (opcional para responsividade) -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      /* Header similar ao da index */
+      .header {
+        background: #fff;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ddd;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      .header .logo img {
+        width: 150px;
+      }
+      .header .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .header .nav li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .header .nav li a {
+        text-decoration: none;
+        color: #a30808;
+        font-weight: bold;
+      }
+      .content-wrapper {
+        padding-top: 90px; /* Espaço para header fixo */
+      }
+      .service-section {
+        margin-bottom: 50px;
+      }
+      .service-image {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+      }
+      .service-description {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-top: none;
+      }
+      .service-description h2 {
+        margin-top: 0;
+        color: #a30808;
+      }
+      .service-description p {
+        text-align: justify;
+      }
+      .btn-contact {
+        background-color: #a30808;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+      .btn-contact:hover {
+        background-color: #7f0606;
+      }
+      /* Seção de Contato */
+      #contact {
+        padding: 40px 20px;
+        background: #f5f5f5;
+      }
+      #contact h2 {
+        text-align: center;
+        color: #a30808;
+        margin-bottom: 30px;
+      }
+      /* Footer */
+      .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navegação -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="MetaSecurity Logo">
+            </a>
+          </div>
+          <div class="col-xs-6 text-right">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="servicos.html">Servicos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+      <!-- Serviço: Teste de Intrusão -->
+      <div class="service-section" id="teste-intrusao">
+        <div class="service-image" style="background-image: url('img/pentest.webp');"></div>
+        <div class="service-description container">
+          <h2>Teste de Intrusão</h2>
+          <p>
+            Nosso serviço de teste de intrusão simula ataques reais para identificar vulnerabilidades em sua infraestrutura. Por meio de técnicas avançadas, nossa equipe avalia a segurança dos seus sistemas e redes, apontando falhas e elaborando um relatório com recomendações práticas para mitigação. A contratação deste serviço reduz riscos e protege seu negócio contra invasões e prejuízos.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Teste de Intrusão em Aplicação Web -->
+      <div class="service-section" id="teste-intrusao-web">
+        <div class="service-image" style="background-image: url('img/webapp.jpg');"></div>
+        <div class="service-description container">
+          <h2>Teste de Intrusão em Aplicação Web</h2>
+          <p>
+            Avaliamos a segurança das suas aplicações web simulando ataques que exploram vulnerabilidades comuns – como injeção SQL e Cross-Site Scripting (XSS). Esse serviço identifica falhas que podem ser exploradas por invasores, proporcionando um plano de ação para correção e aumento da confiabilidade do seu ambiente digital.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Teste de Intrusão em Aplicação Mobile -->
+      <div class="service-section" id="teste-intrusao-mobile">
+        <div class="service-image" style="background-image: url('img/mobileattacks.webp');"></div>
+        <div class="service-description container">
+          <h2>Teste de Intrusão em Aplicação Mobile</h2>
+          <p>
+            Focado na análise de segurança de aplicativos móveis, este serviço detecta vulnerabilidades que podem comprometer dados sensíveis e a integridade do sistema. Realizamos testes em diferentes plataformas e dispositivos, garantindo que seus aplicativos sejam robustos contra ataques e ofereçam a melhor experiência de segurança para os usuários.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Teste de Intrusão em Redes e Infraestrutura -->
+      <div class="service-section" id="teste-intrusao-redes">
+        <div class="service-image" style="background-image: url('img/datacenter.jpg');"></div>
+        <div class="service-description container">
+          <h2>Teste de Intrusão em Redes e Infraestrutura</h2>
+          <p>
+            Este serviço é direcionado à avaliação de vulnerabilidades na rede e na infraestrutura de TI. Por meio da simulação de ataques, identificamos falhas na configuração de dispositivos, na arquitetura de comunicação e nos protocolos de segurança, proporcionando um diagnóstico preciso e recomendações para fortalecer seu ambiente e garantir a continuidade dos negócios.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Teste Focado em Active Directory -->
+      <div class="service-section" id="teste-active-directory">
+        <div class="service-image" style="background-image: url('img/adattacks.webp');"></div>
+        <div class="service-description container">
+          <h2>Teste Focado em Active Directory</h2>
+          <p>
+            Realizamos simulações de ataques direcionados ao Active Directory, incluindo tentativas de quebra de senhas e exploração de políticas de segurança vulneráveis. Nosso serviço avalia a robustez das credenciais e a configuração do ambiente, identificando riscos e sugerindo melhorias para evitar acessos não autorizados e preservar a integridade dos sistemas corporativos.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Teste em APIs -->
+      <div class="service-section" id="teste-apis">
+        <div class="service-image" style="background-image: url('img/api.webp');"></div>
+        <div class="service-description container">
+          <h2>Teste em APIs</h2>
+          <p>
+            Nosso serviço de teste em APIs analisa a segurança das interfaces de programação, identificando vulnerabilidades que possam comprometer a integridade dos dados e a comunicação entre sistemas. Através de simulações de ataques, garantimos que as conexões sejam seguras e que as informações trafeguem de forma protegida, fortalecendo a confiabilidade de suas integrações.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Serviço: Monitoramento Contínuo de Superfície de Ataque Externa -->
+      <div class="service-section" id="monitoramento-superficie">
+        <div class="service-image" style="background-image: url('img/asm.jpg');"></div>
+        <div class="service-description container">
+          <h2>Monitoramento Contínuo de Superfície de Ataque Externa</h2>
+          <p>
+            Este serviço oferece monitoramento ininterrupto do ambiente externo da sua empresa, identificando ameaças e vulnerabilidades emergentes. Utilizamos ferramentas avançadas para analisar a superfície de ataque e responder rapidamente a incidentes, minimizando riscos e garantindo uma postura de segurança proativa. Com essa proteção contínua, sua organização fica sempre um passo à frente das ameaças.
+          </p>
+          <button class="btn-contact" onclick="window.location.href='#contact'">Entre em Contato</button>
+        </div>
+      </div>
+
+      <!-- Seção de Contato com Formulário Typeform -->
+      <div id="contact">
+        <div class="container contact-form">
+          <h2>Entre em Contato</h2>
+          <!-- Formulário Typeform incorporado -->
+          <div data-tf-live="01JNRYMH14M2Y9842WYSFMH7A5"></div>
+          <script src="https://embed.typeform.com/next/embed.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 MetaSecurity. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

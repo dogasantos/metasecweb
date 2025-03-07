@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Meta Security - Consultoria em Cyber Segurança</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Meta Security, consultoria em cyber segurança especializada em segurança ofensiva: análise de vulnerabilidade, monitoramento contínuo e teste de intrusão." name="description"/>
+    <meta content="Meta Security" name="author"/>
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <style>
+      /* Estilos customizados para os cards de serviço */
+      .service-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .service-card h3 {
+        color: #a30808;
+        margin-bottom: 15px;
+      }
+      .service-card p {
+        color: #555;
+        margin-bottom: 20px;
+      }
+      .service-card .btn-contact {
+        background-color: #a30808;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .service-card .btn-contact:hover {
+        background-color: #7f0606;
+      }
+      /* Estilização para o botão de contato na seção hero */
+      .btn-hero {
+        background-color: #a30808;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn-hero:hover {
+        background-color: #7f0606;
+      }
+      /* Estilização para o formulário de contato */
+      .contact-form {
+        margin-top: 50px;
+        text-align: center;
+      }
+      .contact-form h2 {
+        color: #a30808;
+        margin-bottom: 30px;
+      }
+      .header {
+        background: #fff;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ddd;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      .header .logo img {
+        width: 150px;
+      }
+      .header .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .header .nav li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .header .nav li a {
+        text-decoration: none;
+        color: #a30808;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body id="body" data-spy="scroll" data-target=".header">
+    <!-- Header / Navegação -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="MetaSecurity Logo">
+            </a>
+          </div>
+          <div class="col-xs-6 text-right">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="servicos.html">Servicos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
+          <div class="container">
+            <div class="carousel-centered">
+              <div class="margin-b-40">
+                <h1 class="carousel-title">Meta Security</h1>
+                <p class="color-white">Consultoria em Cyber Segurança com foco em segurança ofensiva</p>
+              </div>
+              <a href="#contact" class="btn-hero text-uppercase">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da Seção Hero -->
+
+    <!-- Seção de Serviços com Cards -->
+    <div id="services">
+      <div class="content-lg container">
+        <div class="row margin-b-40">
+          <div class="col-sm-12">
+            <h2 class="text-center" style="color:#a30808;">Nossos Serviços</h2>
+            <p class="text-center">
+              Especializados em segurança ofensiva, oferecemos soluções que garantem a proteção de sua organização.
+              Conheça nossos principais serviços:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Card: Análise de Vulnerabilidade -->
+          <div class="col-sm-4">
+            <div class="service-card">
+              <h3>Análise de Vulnerabilidade</h3>
+              <p>
+                Avaliação detalhada dos sistemas para identificar e corrigir vulnerabilidades, prevenindo brechas exploráveis por atacantes.
+              </p>
+              <button class="btn-contact" onclick="window.location.href='#contact'">Contato</button>
+            </div>
+          </div>
+          <!-- Card: Monitoramento Contínuo -->
+          <div class="col-sm-4">
+            <div class="service-card">
+              <h3>Monitoramento Contínuo</h3>
+              <p>
+                Monitoramento 24/7 da superfície de ataque externa para identificar e mitigar riscos de forma proativa.
+              </p>
+              <button class="btn-contact" onclick="window.location.href='#contact'">Contato</button>
+            </div>
+          </div>
+          <!-- Card: Teste de Intrusão -->
+          <div class="col-sm-4">
+            <div class="service-card">
+              <h3>Teste de Intrusão</h3>
+              <p>
+                Simulação de ataques reais com testes automatizados e manuais para avaliar a resiliência dos seus sistemas.
+              </p>
+              <button class="btn-contact" onclick="window.location.href='#contact'">Contato</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim da Seção de Serviços -->
+
+    <!-- Seção de Contato com Formulário Typeform -->
+    <div id="contact">
+      <div class="container contact-form">
+        <h2>Entre em Contato</h2>
+        <!-- Formulário Typeform incorporado -->
+        <div data-tf-live="01JNRYMH14M2Y9842WYSFMH7A5"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+      </div>
+    </div>
+    <!-- Fim da Seção de Contato -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-seperator">
+        <div class="content-md container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <ul class="list-unstyled footer-list">
+                <li class="footer-list-item"><a href="#body">Home</a></li>
+                <li class="footer-list-item"><a href="#services">Serviços</a></li>
+                <li class="footer-list-item"><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content container">
+        <div class="row">
+          <div class="col-xs-6">
+            <img class="footer-logo" src="img/logo-dark.png" alt="Meta Security Logo">
+          </div>
+          <div class="col-xs-6 text-right">
+            <p class="margin-b-0">&copy; 2025 Meta Security. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS -->
+    <script src="vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/layout.min.js" type="text/javascript"></script>
+    <script src="js/components/wow.min.js" type="text/javascript"></script>
+    <script src="js/components/swiper.min.js" type="text/javascript"></script>
+    <script src="js/components/masonry.min.js" type="text/javascript"></script>
+  </body>
+</html>
